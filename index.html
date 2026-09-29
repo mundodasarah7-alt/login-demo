@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rede Social</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .login {
+      background: white;
+      width: 300px;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    input, button {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 12px;
+      margin-top: 10px;
+    }
+
+    button {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="login">
+    <h2>Rede Social</h2>
+
+    <input id="email" type="email" placeholder="E-mail">
+    <input id="senha" type="password" placeholder="Senha">
+
+    <button onclick="entrar()">Entrar</button>
+
+    <p id="mensagem"></p>
+  </div>
+
+  <script>
+    function entrar() {
+      document.getElementById("mensagem").textContent =
+        "Demonstração: nunca informe sua senha em uma página suspeita.";
+    }
+  </script>
+</body>
+</html>
